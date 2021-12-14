@@ -21,5 +21,5 @@ def currentime():
         greet = "Bom dia!" 
     else:
         greet = "Boa noite!"
-    date = now.strftime("%C/%m/%Y %H:%M:%S %p")
+    date = now.strftime("%d/%m/%Y %H:%M:%S %p")
     return {"current_datetime": date, "message":  greet }
