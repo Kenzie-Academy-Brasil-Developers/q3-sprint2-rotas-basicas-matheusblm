@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.get("/")
 
 def home():
-    return {"data": "Hello Flask"}
+    return {"data": "Hello Flask!"}
 
 @app.get("/current_datetime")
 
@@ -21,5 +21,5 @@ def currentime():
         greet = "Bom dia!" 
     else:
         greet = "Boa noite!"
-    date = now.strftime("%C/%m/%Y %H:%M:%S")
-    return {"current_datetime": f"{date}", "message":  greet }
+    date = now.strftime("%C/%m/%Y %H:%M:%S %p")
+    return {"current_datetime": date, "message":  greet }
