@@ -15,4 +15,5 @@ coverage.xml
 .pytest_cache/
 cover/
 .env
-venv/
+/venv
+.venv/
